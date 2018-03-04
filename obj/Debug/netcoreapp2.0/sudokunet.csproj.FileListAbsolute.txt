@@ -1,0 +1,10 @@
+C:\Users\danza\projects\c#\sudokunet\bin\Debug\netcoreapp2.0\sudokunet.deps.json
+C:\Users\danza\projects\c#\sudokunet\bin\Debug\netcoreapp2.0\sudokunet.runtimeconfig.json
+C:\Users\danza\projects\c#\sudokunet\bin\Debug\netcoreapp2.0\sudokunet.runtimeconfig.dev.json
+C:\Users\danza\projects\c#\sudokunet\bin\Debug\netcoreapp2.0\sudokunet.dll
+C:\Users\danza\projects\c#\sudokunet\bin\Debug\netcoreapp2.0\sudokunet.pdb
+C:\Users\danza\projects\c#\sudokunet\obj\Debug\netcoreapp2.0\sudokunet.csproj.CoreCompileInputs.cache
+C:\Users\danza\projects\c#\sudokunet\obj\Debug\netcoreapp2.0\sudokunet.AssemblyInfoInputs.cache
+C:\Users\danza\projects\c#\sudokunet\obj\Debug\netcoreapp2.0\sudokunet.AssemblyInfo.cs
+C:\Users\danza\projects\c#\sudokunet\obj\Debug\netcoreapp2.0\sudokunet.dll
+C:\Users\danza\projects\c#\sudokunet\obj\Debug\netcoreapp2.0\sudokunet.pdb
