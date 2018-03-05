@@ -10,7 +10,7 @@
                 <tr>
                     @for(int c = 0; c < 9; c++) {
                         <td class="col-md-1 text-center">
-                            <div style="height: 50%; padding-top: 25%; padding-bottom: 25%">
+                            <div style="height: 60%; padding-top: 20%; padding-bottom: 20%">
                                     @if (@Model.Puzzle[r,c] == 0) {
                                         <br/>
                                     } else {
@@ -33,7 +33,7 @@
                 <tr>
                     @for(int c = 0; c < 9; c++) {
                         <td class="col-md-1 text-center" >
-                            <div style="height: 50%; padding-top: 25%; padding-bottom: 25%">
+                            <div style="height: 60%; padding-top: 20%; padding-bottom: 20%">
                                     @Model.Solution[r,c]
                             </div>
                         </td>
