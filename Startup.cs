@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+using sudokunet.Services;
+
 namespace sudokunet
 {
     public class Startup
@@ -22,6 +24,7 @@ namespace sudokunet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSingleton<SudokuService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
