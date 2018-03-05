@@ -21,7 +21,7 @@ namespace sudokunet.Pages
         {
             sudoku = sudokuService;
         }
-
+        
         public void OnGet()
         {
             Solution = sudoku.GetNextPuzzle();

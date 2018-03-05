@@ -4,30 +4,38 @@
     ViewData["Title"] = "Home page";
 }
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-5">
         <table class="table table-bordered">
             @for(int r = 0; r < 9; r++) {
                 <tr>
                     @for(int c = 0; c < 9; c++) {
-                        <td class="col-md-1 text-center" >
-                            @if (@Model.Puzzle[r,c] == 0) {
-                                
-                            } else {
-                                @Model.Puzzle[r,c]
-                            }
+                        <td class="col-md-1 text-center">
+                            <div style="height: 50%; padding-top: 25%; padding-bottom: 25%">
+                                    @if (@Model.Puzzle[r,c] == 0) {
+                                        <br/>
+                                    } else {
+                                        @Model.Puzzle[r,c]
+                                    }
+                            </div>
                         </td>
                     }
                 </tr>
             }
         </table>
     </div>
-    <div class="col-md-6">
-        <table class="table table-bordered">
+    <div class="col-md-2 text-center">
+        <div style="margin-top: 138%"></div>
+        <input class="btn btn-default" type='button' id='hideshow' value='Toggle Solutions'>
+    </div>
+    <div class="col-md-5">
+        <table class="table table-bordered solution" style="display:none;">
             @for(int r = 0; r < 9; r++) {
                 <tr>
                     @for(int c = 0; c < 9; c++) {
                         <td class="col-md-1 text-center" >
-                            @Model.Solution[r,c]
+                            <div style="height: 50%; padding-top: 25%; padding-bottom: 25%">
+                                    @Model.Solution[r,c]
+                            </div>
                         </td>
                     }
                 </tr>
@@ -35,3 +43,13 @@
         </table>
     </div>
 </div>
+@section Scripts{
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#hideshow').click(function() {
+                $('.solution').toggle();
+            })
+        });
+    </script>
+}
